@@ -9,13 +9,15 @@
 
 body{
     display: flex;
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     margin:0px;
+    background-color: black;
     color:rgb(187, 62, 12)
 }
 
 .lc{
+    position: fixed;
     height: 100vh;
     width: var(--rl-proportion);
     background-image:url(./imgs/dragon.jpg);
@@ -64,7 +66,36 @@ body{
 }
 
 .rc{
-    height: 100vh;
     width: calc(100%-var(--rl-proportion));
+    margin-left: var(--rl-proportion);
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
 }
 
+.flavorText{
+    height: 20%;
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 80%;
+    word-wrap: break-word;
+    font-weight: bold;
+}
+
+.text2{
+    padding-top: 20px;
+}
+
+.now{
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.inputfield{
+    background-color: rgb(49, 46, 46);
+    padding:20px;
+}
+
+.
