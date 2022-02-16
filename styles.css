@@ -1,3 +1,11 @@
+::selection{
+    background-color: rgb(221, 85, 85);
+}
+
+a, a:hover, a:focus, a:active {
+    color: inherit;
+    }
+
 :root{
     --rl-proportion:40vw;
     --r-pad:35px;
@@ -11,7 +19,6 @@
 body{
     display: flex;
     height: 120vh;
-    width: 99vw;
     margin:0px;
     background-color: black;
     color:rgb(187, 62, 12)
@@ -154,14 +161,19 @@ input#last-name:focus{
 }
 
 .inputfield ~ button:hover{
-    margin:var(--r-pad);
-    width: 200px;
-    height: 40px;
-    border-radius: 10px/20px;
-    border:0px;
     background-color: rgb(0, 0, 0);
     color:crimson;
     border:3px solid crimson;
-    font-weight: bolder;
-    font-size: 20px;
+}
+
+.logOpt{
+    margin:var(--r-pad);
+    font-size: 18px;
+
+}
+
+.logOpt>a{
+    color:crimson;
+    text-decoration: none;
+
 }
