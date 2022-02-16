@@ -11,7 +11,7 @@
 body{
     display: flex;
     height: 120vh;
-    width: 95vw;
+    width: 99vw;
     margin:0px;
     background-color: black;
     color:rgb(187, 62, 12)
@@ -19,6 +19,7 @@ body{
 
 .lc{
     height: 100%;
+    margin:0px;
     width: var(--rl-proportion);
     background-image:url(./imgs/dragon.jpg);
     background-size: auto 100%;
@@ -66,11 +67,12 @@ body{
 }
 
 .rc{
-    width: calc(calc(100vw - var(--rl-proportion) - 5vw));
+    width: calc(100vw - var(--rl-proportion));
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap:10px;
+    margin:0px;
 }
 
 .flavorText{
@@ -102,6 +104,7 @@ body{
 .inputfield{
     background-color: rgb(49, 46, 46);
     padding: 10px var(--r-pad) 20px;
+    box-shadow: 0px 5px 5px rgb(105, 63, 63);
 }
 
 .attrPacks{
@@ -137,4 +140,28 @@ input#last-name:focus{
     display: flex;
     flex-direction: column;
     width: 35%;
+}
+
+.inputfield ~ button{
+    margin:var(--r-pad);
+    width: 200px;
+    height: 40px;
+    border-radius: 10px/20px;
+    border:0px;
+    background-color: crimson;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.inputfield ~ button:hover{
+    margin:var(--r-pad);
+    width: 200px;
+    height: 40px;
+    border-radius: 10px/20px;
+    border:0px;
+    background-color: rgb(0, 0, 0);
+    color:crimson;
+    border:3px solid crimson;
+    font-weight: bolder;
+    font-size: 20px;
 }
